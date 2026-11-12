@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace "com.terminal.monokaifetch"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.terminal.monokaifetch"
+        minSdk 33 // Required for Watch Face Format
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+}

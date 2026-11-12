@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450" clipShape="CIRCLE">
+    <Scene backgroundColor="#272822">
+
+        <!-- Top Terminal Command Line -->
+        <PartText x="55" y="55" width="340" height="36">
+            <Text align="CENTER">
+                <Font family="mono" size="20" color="#A6E22E">
+                    <Template>user@watch:~$ screenfetch</Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <!-- screenfetch System Info -->
+        <!-- Header: user@wearos -->
+        <PartText x="85" y="100" width="280" height="34">
+            <Text align="LEFT">
+                <Font family="mono" size="22" color="#A6E22E">user</Font>
+                <Font family="mono" size="22" color="#F8F8F2">@</Font>
+                <Font family="mono" size="22" color="#AE81FF">wearos</Font>
+            </Text>
+        </PartText>
+
+        <!-- Divider -->
+        <PartText x="85" y="130" width="280" height="26">
+            <Text align="LEFT">
+                <Font family="mono" size="20" color="#75715E">-----------</Font>
+            </Text>
+        </PartText>
+
+        <!-- OS Info -->
+        <PartText x="85" y="158" width="280" height="32">
+            <Text align="LEFT">
+                <Font family="mono" size="22" color="#F92672">OS: </Font>
+                <Font family="mono" size="22" color="#F8F8F2">Wear OS</Font>
+            </Text>
+        </PartText>
+
+        <!-- TIME (24-Hour with leading zeros) -->
+        <PartText x="85" y="192" width="280" height="42">
+            <Text align="LEFT">
+                <Font family="mono" size="24" color="#F92672">TIME: </Font>
+                <Font family="mono" size="30" color="#E6DB74">
+                    <Template>%s:%s
+                        <Parameter expression="[HOUR_0_23_Z]" />
+                        <Parameter expression="[MINUTE_Z]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <!-- DATE (e.g., Thu Oct 29) -->
+        <PartText x="85" y="238" width="280" height="34">
+            <Text align="LEFT">
+                <Font family="mono" size="22" color="#F92672">DATE: </Font>
+                <Font family="mono" size="22" color="#66D9EF">
+                    <Template>%s %s %d
+                        <Parameter expression="[DAY_OF_WEEK_S]" />
+                        <Parameter expression="[MONTH_S]" />
+                        <Parameter expression="[DAY]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <!-- BATTERY -->
+        <PartText x="85" y="274" width="280" height="34">
+            <Text align="LEFT">
+                <Font family="mono" size="22" color="#F92672">BATT: </Font>
+                <Font family="mono" size="22" color="#FD971F">
+                    <Template>%d%%
+                        <Parameter expression="[BATTERY_PERCENT]" />
+                    </Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <!-- Monokai Terminal Color Swatch Bar -->
+        <PartText x="85" y="320" width="280" height="34">
+            <Text align="LEFT">
+                <Font family="mono" size="24" color="#F92672">██</Font>
+                <Font family="mono" size="24" color="#FD971F">██</Font>
+                <Font family="mono" size="24" color="#E6DB74">██</Font>
+                <Font family="mono" size="24" color="#A6E22E">██</Font>
+                <Font family="mono" size="24" color="#66D9EF">██</Font>
+                <Font family="mono" size="24" color="#AE81FF">██</Font>
+            </Text>
+        </PartText>
+
+        <!-- Bottom Active Prompt -->
+        <PartText x="95" y="362" width="260" height="34">
+            <Text align="CENTER">
+                <Font family="mono" size="20" color="#A6E22E">user@watch:~$ </Font>
+                <Font family="mono" size="20" color="#F8F8F2">█</Font>
+            </Text>
+        </PartText>
+
+    </Scene>
+</WatchFace>
