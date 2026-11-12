@@ -24,9 +24,7 @@ Built using the official **Watch Face Format (WFF v1)** for maximum battery effi
   - `DATE`: Current day of the week, month, and day.
   - `BATT`: Real-time device battery percentage (`[BATTERY_PERCENT]`).
 - **Color Swatch Bar**: Monokai terminal color blocks aligned flush with the system info text.
-- **Terminal CLI Header & Prompt**:
-  - Top: `user@watch:~$ screenfetch`
-  - Bottom: `user@watch:~$ █` active terminal prompt with cursor.
+- **Terminal CLI Header**: Top command execution `user@watch:~$ screenfetch`.
 - **JetBrains Mono Typography**: Clean monospace font for authentic terminal rendering.
 - **Declarative Watch Face Format**: Uses no custom background services or heavy runtimes—battery-friendly and native to Wear OS.
 
